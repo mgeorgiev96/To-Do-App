@@ -1,0 +1,149 @@
+html,body{
+    width: 100vw;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    background-image: radial-gradient(#434343,#000000);
+    font-family: 'Gruppo'
+}
+
+
+
+#header{
+    background-color: #5D080B;
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding: 1vh 0 1vh 0;
+    font-size: 1.6rem;
+}
+
+#controlSection{
+    background-image: radial-gradient(#868f96,#596164);
+    color: white;
+    text-align: center;
+    padding: 2vh 0 2vh 0;
+    font-size: 1.5rem;
+    margin-bottom: 5vh;
+}
+
+#filter{
+    border-radius: 7px;
+}
+
+
+li{
+    width: 80vw;
+    border: 1px solid white;
+    height: auto;
+    overflow: auto;
+    padding: 1.5vh 0 1.5vh 0;
+    font-size: 1.5rem;
+    margin-bottom: 1vh;
+    word-break: break-all;
+    border-radius: 10px;
+}
+
+.ulCheck{
+    margin: 1vw;
+}
+.remove{
+    border: none;
+    color: white;
+    float: right;
+    margin-right: 2vw;
+    font-size: 1rem;
+}
+
+#addSection{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    color: white;
+}
+#newToDo{
+    margin-left: 12vw;
+    border-radius: 7px;
+    padding: 1vh 0 0 0;
+    width: 30vw;
+    height: 2.5vh;
+}
+#add{
+    border-radius: 8px;
+    font-size: 1.1rem;
+    padding: 0.2vh 0 0.2vh 0;
+    text-align: center;
+    box-shadow: -0.5px 4px 1px 1px gray;
+    margin-left: 2vw;
+}
+
+ul{
+    list-style: none;
+}
+
+
+.remove:hover{
+    text-decoration: underline;
+    transform: scale(1.05);
+    color: red;
+    transition: 200ms linear;
+    cursor: pointer;
+}
+#add:active{
+    transform: translateY(7px);
+    box-shadow: -0.5px 1px 1px 0 gray;
+    transition: 200ms ease-in-out;
+    cursor: pointer;
+    
+}
+#newToDo:hover,#filter:hover{
+    transform: scale(1.01);
+    transition: 500ms;
+    cursor: pointer;
+}
+
+#add:hover{
+    background-color: #5D080B;
+    color: white;
+    transition: background 400ms ease-in-out , color 150ms ease-in-out;
+    cursor: pointer;
+}
+
+li:hover{
+    transform: scale(1.1);
+    margin: 1vh 0 2vh 0;
+    box-shadow: 2px 0 10px 2px white;
+    transition: 400ms;
+}
+.ulCheck:hover,#hideAll:hover{
+    cursor: pointer;
+}
+
+
+@media all and (max-width:600px){
+   label:nth-child(2){
+    display: block;
+} 
+}
+
+@media all and (min-width:650px){
+    #newToDo{
+        height: 2vh;
+        width: 25vw;
+        margin-left: 2vw;
+        padding: 1vh 0 1vh 0
+        
+    }
+    #add{
+        margin-bottom: 1vh;
+        padding: 0.5vh 0 0.5vh 0;
+        box-shadow: -0.5px 4px 1px 1px gray;
+        font-size: 1.2rem;
+        width: 15vw;
+    }
+    li{
+        width: 50vw;
+    }
+}
